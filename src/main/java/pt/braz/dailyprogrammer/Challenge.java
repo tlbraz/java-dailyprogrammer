@@ -7,7 +7,7 @@ public abstract class Challenge {
     public void execute() {
         System.out.println("Executing challenge for " + url);
         tests();
-        System.out.println("Done");
+        System.out.println("Success!");
     }
 
     public abstract void tests();
