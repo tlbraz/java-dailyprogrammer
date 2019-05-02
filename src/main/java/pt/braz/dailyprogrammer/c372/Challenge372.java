@@ -42,7 +42,7 @@ public class Challenge372 extends Challenge {
 
     Function1<String, Boolean> balanced = s -> {
         Tuple2<List<Character>, List<Character>> tuple = List.ofAll(s.toCharArray()).partition(p -> p.equals('x'));
-        return s.isEmpty() || (tuple._1.size() == tuple._2.size());
+        return tuple._1.size() == tuple._2.size();
     };
 
     Function1<String, Boolean> balanced_bonus = s -> s.isEmpty() ||
